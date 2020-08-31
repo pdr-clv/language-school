@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Casa del Españo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="estilos/estilos.css">
+<!-- iconos de la pagina de fontastic (he hecho login) para utilizar en el proyecto -->        
+<link href="https://file.myfontastic.com/dScink4E2pzcT6vNUZDyY9/icons.css" rel="stylesheet">
+    </head>
+    <body>
+<!-- se declara header con clase main-header, después se le añade divs con clase container y container--flex (para ver cuando se le da estilo flex según el tamaño de la pantalla -->
+        <header class="main-header">
+            <div class="container container--flex">
+<!-- se le añade el logo, y se pone un h1, pero que en futuro, ese h1 se cambiará por un img -->
+                
+<!-- se va a dividir en dos divs, uno para el logo, y el otro para toda la información que se añada de contacto. Dirección, teléfono, etc. -->                  
+<!-- como van a estar en dos columnas logo y contactInfo, se les añade la clase column y column--50 para los flexbox que se es dará en estilos.css -->
+                <div class="logo-container column column--50">
+                   <h1 class="logo">Logo
+                   </h1>
+                </div>
+                <div class="main-header--contactInfo column column--50">
+<!-- dentro de contact info, pondremos whatsapp y correo electrónico, se puede asignar div, o si no va a tener mucha historia, simplemente un p -->
+                    <p class="main-header--contactInfo--phone">
+                        <span class="icon-whatsapp">9999999</span>
+                    </p>
+                    <p class="main-header--contactInfo--mail">
+                        <span class="icon-mail">pdr.clv@gmail.com</span>
+                    </p>
+                </div>
+            </div>
+        </header>  
+<!-- después del header, vamos a definir el menu de navegacion -->
+        <nav class="main-nav">
+            <div class="container container--flex">
+                <span class="icon-menu" id="btnmenu"></span>
+<!-- el menu de navegacion será un boton menu que será el que desplieuge menu cuando esté en dispositivo movil, un menu de navegacion nav, y se le añade también unos botones de acceso a las redes sociales -->
+                <ul class="menu" id="menu">
+                    <li class="menu--item"><a href="#" class="menu--link menu--link--select">Inicio</a></li>
+                    <li class="menu--item"><a href="#" class="menu--link">Cursos</a></li>
+                    <li class="menu--item"><a href="#" class="menu--link">Articulos</a></li>
+                    <li class="menu--item"><a href="#" class="menu--link">Contacto</a></li>
+                </ul>
+                <div class="social-icon">
+                    <a href="" class="social-icon--link"><span class="icon-facebook"></span></a>
+                    <a href="" class="social-icon--link"><span class="icon-youtube"></span></a>
+                    <a href="" class="social-icon--link"><span class="icon-twitter"></span></a>
+                </div>
+            </div>
+        </nav>
+        <section class="banner">
+            <img src="imagenes/valencia.jpg" alt="" class="banner--img">
+            <div class="banner--contenido">Aprende español desde casa</div>
+        </section>
+        
+        <main class="main">
+            <section class="group group--color">
+                <div class="container">
+                    <h2 class="main--title">Cursos online de español</h2>
+                    <p class="main--txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam adipisci in possimus mollitia aperiam, reiciendis cupiditate perferendis nulla officia</p>
+                </div>
+            </section>
+<!-- aqui se puede añadir una oferta especial, cursos, etc .. -->
+            <section class="group main--about--description">
+                <div class="container container--flex">
+                    <div class="column column--50">
+                    <img src="imagenes/alhambra.jpg" alt="">
+                    </div>
+                    <div class="column column--50">
+                    <h3 class="column--title">Sorteo de un viaje a Granada</h3>
+                    <p class="column--txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolor placeat in exercitationem ipsa quae, error rem iste explicabo deserunt deleniti, illo officia accusamus eum natus nihil aliquam inventore? Nobis!</p>
+                    <a href="" class="btn btn--contact">Contacta</a>
+                    </div>
+                </div>
+            </section>
+<!-- se añaden 4 ofertas menos principales, pero importantes a resaltar, no necesitan que acceda a ningún sitio en  concreto -->
+            <section class="group especiales">
+                <h2 class="group--title">Mejora asegurada</h2>
+<!-- se dividirá en 4 columnas cuando sea pantalla grande, 2 en tamaño mediano, y 1 cuando sea pequeña -->                
+                   <div class="container container--flex">
+                    <div class="column column--50-25">
+                        <img src="imagenes/expresion.jpg" alt="" class="especiales--img">
+                        <div class="especiales--title">Expresión oral</div>
+                        <div class="especiales--precio">Aprende mas</div>
+                    </div>
+                    <div class="column column--50-25">
+                        <img src="imagenes/conversacion.jpg" alt="" class="especiales--img">
+                        <div class="especiales--title">Conversación</div>
+                        <div class="especiales--precio">Aprende mas</div>
+                    </div>
+                    <div class="column column--50-25">
+                        <img src="imagenes/lectura.jpg" alt="" class="especiales--img">
+                        <div class="especiales--title">Lectura</div>
+                        <div class="especiales--precio">Aprende mas</div>
+                    </div>
+                    <div class="column column--50-25">
+                        <img src="imagenes/gramatica.jpg" alt="" class="especiales--img">
+                        <div class="especiales--title">Gramatica</div>
+                        <div class="especiales--precio">Aprende mas</div>
+                    </div>
+                </div>    
+            </section>
+        </main>
+    </body>
+    <footer class="main--footer">
+        <div class="container container--flex">
+<!-- el footer será de tres columnas cuando sea grande, y de una cuando sea tamaño pequeño -->
+            <div class="column column--33">
+                <h2 class="column--title">Porque visitarnos</h2>
+                <p class="column--txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nam ipsum omnis iure quos, deleniti.</p>
+                <p class="column--txt">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column--title">Encuentranos en</h2>
+                <p class="column--txt"><span class="icon-whatsapp">999-9999-9999</span></p>
+                <p class="column--txt"><span class="icon-location">Calle Escalante</span></p>
+                <p class="column--txt"></p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column--title">Redes sociales</h2>
+                <p class="column--txt"><a href="" class="icon-facebook">Siguenos en Facebook</a></p>
+                <p class="column--txt"><a href="" class="icon-youtube">Visita el canal</a></p>
+                <p class="column--txt"><a href="" class="icon-mail">Envianos un correo</a></p>
+                <p class="column--txt"><a href="" class="icon-skype">Guarda el contacto Skype</a></p>
+            </div>
+            
+        </div>
+        <p class="copy">Copyright&copy; 2018 - Reservados los derechos de autor</p>
+    </footer>
+    <script src="js/menu.js"></script>
+</html>
